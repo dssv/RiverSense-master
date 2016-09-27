@@ -1,0 +1,34 @@
+<div class="box">
+	<div class="box-body">
+		<ui-gmap-google-map center='map.center' zoom='map.zoom'>
+			<ui-gmap-marker coords="map.center" idkey="map.id" options="options">
+        	</ui-gmap-marker>
+		</ui-gmap-google-map>
+	</div>
+</div>
+
+<div class="box">
+	<div class="box-header">
+		<h1 class="box-title">Nível do Rio</h1>
+	</div>
+	<div class="box-body text-center">
+		<ui-knob value="valueNivel" options="NivelOptions"></ui-knob>
+	</div>
+	<div class="box-footer">
+		<h3 class="box-title">Os níveis de água estão .<h3>
+	</div>
+	
+</div>
+
+<div class="box">
+	<div class="box-header">
+		<h1 class="box-title">Vazão do Rio</h1>
+	</div>
+	<div class="box-body text-center">
+		<ui-knob value="valueChuva" options="chuvaOptions"></ui-knob>
+	</div>
+	<div class="box-footer">
+		<h3 class="box-title">Os níveis de vazão estão .<h3>
+	</div>
+	
+</div>

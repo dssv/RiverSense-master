@@ -1,0 +1,41 @@
+<div class="box">
+	<div class="box-body">
+		<ui-gmap-google-map center='map.center' zoom='map.zoom'  refresh="true">
+			<ui-gmap-marker coords="map.center" idkey="map.id" options="options">
+        	</ui-gmap-marker>
+        	<ui-gmap-markers models="dadoportal" coords="'self'" icon="'icon'"> <!-- click="onClick"> -->
+	  	<!-- <ui-gmap-windows show="show">
+            <div ng-non-bindable>{{title}} {{autor}}</div>
+        </ui-gmap-windows> -->
+      </ui-gmap-markers>
+		</ui-gmap-google-map>
+	</div>
+</div>
+
+
+
+<div class="box">
+	<div class="box-header">
+		<h1 class="box-title">Umidade do solo</h1>
+	</div>
+	<div class="box-body text-center">
+		<ui-knob value="valueSolo" options="soloOptions"></ui-knob>
+	</div>
+	<div class="box-footer">
+		<h3>Os níveis de umidade estão normais.<h3>
+	</div>
+	
+</div>
+
+<div class="box">
+	<div class="box-header">
+		<h1 class="box-title">Volume de chuva</h1>
+	</div>
+	<div class="box-body text-center">
+		<ui-knob value="valueChuva" options="chuvaOptions"></ui-knob>
+	</div>
+	<div class="box-footer">
+		<h3>{{msgChuva}}</h3>
+	</div>
+	
+</div>
